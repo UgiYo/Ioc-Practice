@@ -12,10 +12,20 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            InputAccept accept = new InputAccept();
-            accept.Inject(new PromptDataProcessor());
+            #region CASE1
+            //InputAccept accept = new InputAccept();
+            //accept.Inject(new PromptDataProcessor());
+            //accept.Execute();
+            //Console.Read();
+            #endregion
+
+            #region CASE2
+            Container.RegisterImplement(typeof(InputAccept));
+            Container.RegisterImplement(typeof(IDataProcessor), new PromptDataProcessor());
+            InputAccept accept = (InputAccept)Container.GetInstance(typeof(InputAccept));
             accept.Execute();
             Console.Read();
+            #endregion
         }
     }
 
@@ -23,10 +33,19 @@ namespace ConsoleApp
     {
         private IDataProcessor _dataProcessor;
 
-        public void Inject(IDataProcessor dataProcessor)
+        #region CASE1 interface DI
+        //public void Inject(IDataProcessor dataProcessor)
+        //{
+        //    _dataProcessor = dataProcessor;
+        //}
+        #endregion
+
+        #region CASE2 constructor DI
+        public InputAccept(IDataProcessor dataProcessor)
         {
             _dataProcessor = dataProcessor;
         }
+        #endregion
 
         public void Execute()
         {

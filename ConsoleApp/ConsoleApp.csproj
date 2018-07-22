@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Container.cs" />
     <Compile Include="Processor\DummyDataProcessor.cs" />
     <Compile Include="Processor\Interface\IDataProcessor.cs" />
     <Compile Include="Program.cs" />
