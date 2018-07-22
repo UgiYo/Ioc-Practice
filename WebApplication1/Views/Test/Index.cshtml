@@ -1,0 +1,56 @@
+﻿@using MyWebApplication.WebService
+@{
+    ViewBag.Title = "Index";
+}
+<div id="main">
+    <textarea id="input" style="width:100%"></textarea>
+    <table id="random">
+        <tr>
+            <td colspan="2">
+                <textarea id="input" style="width:100%"></textarea>
+            </td>
+            <td colspan="1">
+                <input type="text" style="width:100%">
+            </td>
+            <td colspan="1">
+                <input type="button" value="隨機產生" id="random" onclick="randomAction()">
+            </td>
+        </tr>
+    </table>
+    <input type="button" id="bt4" value="傳送值及回傳json" />
+    <div id="output">
+
+    </div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#input').val('ABC');
+    });
+
+    function randomAction() {
+        $.ajax({
+            type: "post",
+            url: "../WebService/MyWebService.asmx/setSession",
+            success: function (response) {
+                debugger
+                $("#output").html($(response).find("string").text());
+            }
+        });
+    };
+    //傳送值及接數json回傳
+    $("#bt4").click(function () {
+        $.ajax({
+            type: "post",
+            url: "../WebService/MyWebService.asmx/HelloWorld?val=哈囉",
+            data: "ret=資料內容",
+            success: function (response) {
+
+                $("#output").html(response.data + "<br/>" + response.data1);
+
+            }
+        });
+        }
+    );
+
+</script>

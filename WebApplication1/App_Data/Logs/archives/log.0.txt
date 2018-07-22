@@ -1,0 +1,48 @@
+2018-03-31 14:01:19.4746 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+2018-03-31 14:01:19.5989 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+2018-03-31 14:01:19.6851 | INFO | WebApplication1.Controllers.HomeController | Info 
+2018-03-31 14:01:19.6851 | WARN | WebApplication1.Controllers.HomeController | Warn 
+2018-03-31 14:01:19.6931 | ERROR | WebApplication1.Controllers.HomeController | Error 
+2018-03-31 14:01:19.6931 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+2018-03-31 14:01:19.6931 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:01:19.7272 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:01:19.7272 | INFO | WebApplication1.Controllers.HomeController | Info 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:01:19.7272 | WARN | WebApplication1.Controllers.HomeController | Warn 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:01:19.7272 | ERROR | WebApplication1.Controllers.HomeController | Error 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:01:19.7272 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:26:09.9874 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+2018-03-31 14:29:41.4052 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+2018-03-31 14:29:41.4152 | INFO | WebApplication1.Controllers.HomeController | Info 
+2018-03-31 14:29:41.4152 | WARN | WebApplication1.Controllers.HomeController | Warn 
+2018-03-31 14:29:41.4152 | ERROR | WebApplication1.Controllers.HomeController | Error 
+2018-03-31 14:29:41.4238 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+2018-03-31 14:29:41.4974 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:29:41.5105 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:29:41.5105 | INFO | WebApplication1.Controllers.HomeController | Info 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:29:41.5105 | WARN | WebApplication1.Controllers.HomeController | Warn 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:29:41.5105 | ERROR | WebApplication1.Controllers.HomeController | Error 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-03-31 14:29:41.5180 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25

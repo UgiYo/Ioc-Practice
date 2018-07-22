@@ -1,0 +1,24 @@
+2018-04-24 00:18:02.1063 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+2018-04-24 00:18:02.2265 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+2018-04-24 00:18:02.2335 | INFO | WebApplication1.Controllers.HomeController | Info 
+2018-04-24 00:18:02.2335 | WARN | WebApplication1.Controllers.HomeController | Warn 
+2018-04-24 00:18:02.2475 | ERROR | WebApplication1.Controllers.HomeController | Error 
+2018-04-24 00:18:02.2475 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+2018-04-24 00:18:02.3186 | TRACE | WebApplication1.Controllers.HomeController | Trace 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-04-24 00:18:02.3346 | DEBUG | WebApplication1.Controllers.HomeController | Debug 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-04-24 00:18:02.3446 | INFO | WebApplication1.Controllers.HomeController | Info 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-04-24 00:18:02.3446 | WARN | WebApplication1.Controllers.HomeController | Warn 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-04-24 00:18:02.3546 | ERROR | WebApplication1.Controllers.HomeController | Error 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
+2018-04-24 00:18:02.3546 | FATAL | WebApplication1.Controllers.HomeController | Fatal 
+System.DivideByZeroException: 嘗試以零除。
+   於 WebApplication1.Controllers.HomeController.Index() 於 D:\Mine\MVC練習\WebApplication1\WebApplication1\Controllers\HomeController.cs: 行 25
