@@ -41,9 +41,23 @@ namespace ConsoleApp
         #endregion
 
         #region CASE2 constructor DI
-        public InputAccept(IDataProcessor dataProcessor)
+        //public InputAccept(IDataProcessor dataProcessor)
+        //{
+        //    _dataProcessor = dataProcessor;
+        //}
+        #endregion
+
+        #region CASE3 setter DI
+        public IDataProcessor DataProcessor
         {
-            _dataProcessor = dataProcessor;
+            get
+            {
+                return _dataProcessor;
+            }
+            set
+            {
+                _dataProcessor = value;
+            }
         }
         #endregion
 

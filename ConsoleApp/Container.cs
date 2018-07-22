@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    public static class Container
+    public class Container
     {
         private static Dictionary<Type, object> _stores = null;
 
@@ -41,24 +42,41 @@ namespace ConsoleApp
         {
             if (Stores.ContainsKey(t))
             {
-                ConstructorInfo[] cis = t.GetConstructors();
-                if (cis.Length != 0)
+                #region CASE2 constructor DI
+                //ConstructorInfo[] cis = t.GetConstructors();
+                //if (cis.Length != 0)
+                //{
+                //    Dictionary<string, object> paramArray = CreateConstructorParameter(t);
+                //    List<object> cArray = new List<object>();
+                //    foreach (ParameterInfo pi in cis[0].GetParameters())
+                //    {
+                //        if (paramArray.ContainsKey(pi.Name))
+                //            cArray.Add(paramArray[pi.Name]);
+                //        else
+                //            cArray.Add(null);
+                //    }
+                //    return cis[0].Invoke(cArray.ToArray());
+                //}
+                //else if (Stores[t] != null)
+                //    return Stores[t];
+                //else
+                //    return Activator.CreateInstance(t, false);
+                #endregion
+
+                #region CASE3 setter DI
+                if (Stores[t] == null)
                 {
-                    Dictionary<string, object> paramArray = CreateConstructorParameter(t);
-                    List<object> cArray = new List<object>();
-                    foreach (ParameterInfo pi in cis[0].GetParameters())
+                    object target = Activator.CreateInstance(t, false);
+                    foreach (PropertyDescriptor pd in TypeDescriptor.GetProperties(target))
                     {
-                        if (paramArray.ContainsKey(pi.Name))
-                            cArray.Add(paramArray[pi.Name]);
-                        else
-                            cArray.Add(null);
+                        if (Stores.ContainsKey(pd.PropertyType))
+                            pd.SetValue(target, GetInstance(pd.PropertyType));
                     }
-                    return cis[0].Invoke(cArray.ToArray());
+                    return target;
                 }
-                else if (Stores[t] != null)
-                    return Stores[t];
                 else
-                    return Activator.CreateInstance(t, false);
+                    return Stores[t];
+                #endregion
             }
             return Activator.CreateInstance(t, false);
         }
